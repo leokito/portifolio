@@ -2,7 +2,7 @@ import React from 'react'
 import { Nav, HeaderLogo, HeaderContainer, MobileIcon, NavMenu, NavLinks, NavButton, NavBtnLink } from './style'
 import {FaBars} from 'react-icons/fa'
 
-const Header = () => {
+const Header = ({toggle}: any) => {
   return (
   <>
   <Nav>
@@ -10,7 +10,7 @@ const Header = () => {
         <HeaderLogo to="/">
             {"<Leo/Dev>"}
         </HeaderLogo>
-        <MobileIcon>
+        <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
         <NavMenu>
