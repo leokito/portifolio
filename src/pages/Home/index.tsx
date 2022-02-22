@@ -1,6 +1,9 @@
 import React, {useState} from 'react'
 import Header from '../../components/Header'
 import HeroSection from '../../components/HeroSection'
+import Infos from '../../components/Infos'
+import { aboutObj } from '../../components/Infos/Data'
+import Tecnologies from '../../components/Tecnologies'
 import Sidebar from '../../components/Sidebar'
 
 const Home = () => {
@@ -12,11 +15,13 @@ const Home = () => {
     }
 
   return (
-      <>
-    <Sidebar isOpen={isOpen} toggle={toggle}/>
-    <Header toggle={toggle}/>
-    <HeroSection />
-      </>
+    <>
+      <Sidebar isOpen={isOpen} toggle={toggle}/>
+      <Header toggle={toggle}/>
+      <HeroSection />
+      <Infos {...aboutObj}/>
+      <Tecnologies />
+    </>
   )
 }
 

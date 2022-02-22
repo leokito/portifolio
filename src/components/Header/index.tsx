@@ -7,20 +7,48 @@ const Header = ({toggle}: any) => {
   <>
   <Nav>
       <HeaderContainer>
-        <HeaderLogo to="/">
+        <HeaderLogo to='home'
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-80}
+        >
             {"<Leo/Dev>"}
         </HeaderLogo>
         <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
         <NavMenu>
-            <NavLinks to="projects">Projetos</NavLinks>
+            <NavLinks to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+            >Sobre</NavLinks>
         </NavMenu>
         <NavMenu>
-            <NavLinks to="qualifications">Qualificações</NavLinks>
+            <NavLinks to="tecnologies"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+            >Tecnologias</NavLinks>
         </NavMenu>
         <NavMenu>
-            <NavLinks to="about">Sobre</NavLinks>
+            <NavLinks to="qualifications"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+            >Qualificações</NavLinks>
+        </NavMenu>
+        <NavMenu>
+            <NavLinks to="projects"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+            >Projetos</NavLinks>
         </NavMenu>
         <NavButton>
             <NavBtnLink to="contact">Contato</NavBtnLink>
