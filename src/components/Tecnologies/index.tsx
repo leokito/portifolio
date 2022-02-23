@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import {
-    QualiContainer,
-    QualiH1, 
-    QualiWrap, 
-    QualiCard, 
-    QualiIcon, 
-    QualiH2, 
-    QualiList, 
-    QualiItem, 
+    TechContainer,
+    TechH1, 
+    TechWrap, 
+    TechCard, 
+    TechIcon, 
+    TechH2, 
+    TechList, 
+    TechItem, 
     BtnWrap
 } from './style';
 import { ArrowForward, ArrowRight } from '../HeroSection/style';
@@ -23,33 +23,33 @@ const Tecnologies = () => {
       setHover(!hover)
     };
   return (
-    <QualiContainer id='tecnologies'>
-        <QualiH1>Tecnologias</QualiH1>
-        <QualiWrap>
-            <QualiCard>
-                <QualiIcon src={Icon1}/>
-                <QualiH2>Front-End</QualiH2>
-                <QualiList>
-                    <QualiItem>HTML5</QualiItem>
-                    <QualiItem>CSS3</QualiItem>
-                    <QualiItem>Javascript</QualiItem>
-                    <QualiItem>ReactJS</QualiItem>
-                    <QualiItem>Typescript</QualiItem>
-                </QualiList>
-            </QualiCard>
-            <QualiCard>
-                <QualiIcon src={Icon2}/>
-                <QualiH2>Back-End</QualiH2>
-                <QualiList>
-                <QualiItem>Python</QualiItem>
-                <QualiItem>Flask / FastAPI</QualiItem>
-                <QualiItem>Django</QualiItem>
-                <QualiItem>NodeJS</QualiItem>
-                <QualiItem>ExpressJS</QualiItem>
-                <QualiItem>PostgreSQL</QualiItem>
-                </QualiList>
-            </QualiCard>
-        </QualiWrap>
+    <TechContainer id='tecnologies'>
+        <TechH1>Tecnologias</TechH1>
+        <TechWrap>
+            <TechCard>
+                <TechIcon src={Icon1}/>
+                <TechH2>Front-End</TechH2>
+                <TechList>
+                    <TechItem>HTML5</TechItem>
+                    <TechItem>CSS3</TechItem>
+                    <TechItem>Javascript</TechItem>
+                    <TechItem>ReactJS</TechItem>
+                    <TechItem>Typescript</TechItem>
+                </TechList>
+            </TechCard>
+            <TechCard>
+                <TechIcon src={Icon2}/>
+                <TechH2>Back-End</TechH2>
+                <TechList>
+                <TechItem>Python</TechItem>
+                <TechItem>Flask / FastAPI</TechItem>
+                <TechItem>Django</TechItem>
+                <TechItem>NodeJS</TechItem>
+                <TechItem>ExpressJS</TechItem>
+                <TechItem>PostgreSQL</TechItem>
+                </TechList>
+            </TechCard>
+        </TechWrap>
         <BtnWrap>
             <Button 
                 to='qualifications'
@@ -66,7 +66,7 @@ const Tecnologies = () => {
                 >Qualificações {hover ? <ArrowForward/> : <ArrowRight />}
             </Button>
         </BtnWrap>
-    </QualiContainer>
+    </TechContainer>
   )
 }
 

@@ -46,4 +46,4 @@ export interface iAboutObj {
   dark: boolean;
   primary: boolean;
   darkTxt: boolean;
-}
+};

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Link as RouteLink } from 'react-router-dom'
 import {Link as ScrollLink} from 'react-scroll'
+import { SocialLink } from '../Footer/style'
 
 export const Nav = styled.nav`
     background: #000;
@@ -86,7 +87,7 @@ export const NavButton = styled.nav`
         display: none;
     }
 `
-export const NavBtnLink = styled(RouteLink)`
+export const NavBtnLink = styled(ScrollLink)`
     border-radius: 50px;
     background: #b22222;
     white-space: nowrap;

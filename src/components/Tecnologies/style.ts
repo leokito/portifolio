@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const QualiContainer = styled.div`
-    height: 800px;
+export const TechContainer = styled.div`
+    height: 872px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #010606;
+    background: #0c0c0c;
 
     @media screen and (max-width: 768px) {
         height: 1100px;
@@ -16,7 +16,7 @@ export const QualiContainer = styled.div`
         height: 1300px;
     }
 `
-export const QualiWrap = styled.div`
+export const TechWrap = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -29,7 +29,7 @@ export const QualiWrap = styled.div`
         padding: 0 20px;
     }
 `
-export const QualiCard = styled.div`
+export const TechCard = styled.div`
     background: #dcdcdc;
     display: flex;
     flex-direction: column;
@@ -48,13 +48,13 @@ export const QualiCard = styled.div`
         cursor: pointer;
     }
 `
-export const QualiIcon = styled.img`
+export const TechIcon = styled.img`
     height: 160px;
     width: 160px;
     margin-bottom: 10px;
 `
 
-export const QualiH1 = styled.h1`
+export const TechH1 = styled.h1`
     font-size: 2.5rem;
     color: red;
     margin-bottom: 64px;
@@ -64,12 +64,12 @@ export const QualiH1 = styled.h1`
     }
 `
 
-export const QualiH2 = styled.h2`
+export const TechH2 = styled.h2`
     font-size: 1.3rem;
     margin-bottom: 10px;
 `
 
-export const QualiList = styled.ul`
+export const TechList = styled.ul`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,7 +84,7 @@ export const BtnWrap = styled.div`
     margin-top: 50px;
 `
 
-export const QualiItem = styled.div`
+export const TechItem = styled.div`
     font-size: 1rem;
     text-align: center;
 `
