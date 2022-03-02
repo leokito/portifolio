@@ -25,7 +25,7 @@ export interface infoRowComp {
 
 export interface HeadingComp {
   lightTxt: boolean;
-}
+};
 
 export interface iSubtitle {
   darkTxt: boolean;
