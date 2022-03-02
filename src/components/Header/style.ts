@@ -1,7 +1,5 @@
 import styled from 'styled-components'
-import { Link as RouteLink } from 'react-router-dom'
 import {Link as ScrollLink} from 'react-scroll'
-import { SocialLink } from '../Footer/style'
 
 export const Nav = styled.nav`
     background: #000;
@@ -27,6 +25,7 @@ export const HeaderContainer = styled.div`
     width:100%;
     padding: 0 24px;
     /* max-width: 2000px; */
+    box-shadow: rgba(255,255,255, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 `
 export const HeaderLogo = styled(ScrollLink)`
     color: #fff;
@@ -75,7 +74,7 @@ export const NavLinks = styled(ScrollLink)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-    &:active {
+    &.active {
         border-bottom: 3px solid red;
     }
 `

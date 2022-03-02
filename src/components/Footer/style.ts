@@ -74,7 +74,6 @@ export const SocialMediaWrap = styled.div`
     @media screen and (max-width: 820px) {
         flex-direction: column;
     }
-
 `
 export const SocialLogo = styled(Link)`
     color: #fff;
@@ -96,6 +95,8 @@ export const SocialIcons = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 240px;
+    margin-bottom: 20px;
+    margin-bottom: -30px;
 `
 export const SocialLink = styled.a`
     color: #fff;

@@ -14,7 +14,7 @@ const SliderComp = ()=> {
   console.log(current)
 
   const prevSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current -1)
+    setCurrent(current === length - 1 ? 0 : current + 1)
   }
 
   if(!Array.isArray(imgData) || length <=0) {

@@ -7,7 +7,7 @@ import Tecnologies from '../../components/Tecnologies'
 import Sidebar from '../../components/Sidebar'
 import Footer from '../../components/Footer'
 import Qualifications from '../../components/Qualifications'
-import Projects from '../../components/Projetos'
+import Projects from '../../components/Projects'
 import Contact from '../../components/Contact'
 
 const Home = () => {

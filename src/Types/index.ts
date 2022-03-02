@@ -21,7 +21,7 @@ export interface IinfoContainer {
 
 export interface infoRowComp {
   imgStart: boolean;
-}
+};
 
 export interface HeadingComp {
   lightTxt: boolean;
@@ -29,7 +29,7 @@ export interface HeadingComp {
 
 export interface iSubtitle {
   darkTxt: boolean;
-}
+};
 
 export interface iAboutObj {
   id: string;
@@ -46,4 +46,9 @@ export interface iAboutObj {
   dark: boolean;
   primary: boolean;
   darkTxt: boolean;
+};
+
+export interface iProjectCard {
+  onClick?: ()=> void;
+  img: any;
 };

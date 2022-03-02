@@ -21,4 +21,6 @@ declare module '*.mp4' {
     screenX: number;
     screenY: number;
     shiftKey: boolean;
+
+    onClick(): () => void;
 }

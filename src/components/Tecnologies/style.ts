@@ -53,22 +53,19 @@ export const TechIcon = styled.img`
     width: 160px;
     margin-bottom: 10px;
 `
-
 export const TechH1 = styled.h1`
-    font-size: 2.5rem;
-    color: red;
+    font-size: 2.8rem;
+    color: #b22222;
     margin-bottom: 64px;
 
     @media screen and (max-width: 400px) {
         font-size: 2rem;
     }
 `
-
 export const TechH2 = styled.h2`
     font-size: 1.3rem;
     margin-bottom: 10px;
 `
-
 export const TechList = styled.ul`
     display: flex;
     flex-direction: column;
@@ -78,12 +75,10 @@ export const TechList = styled.ul`
     list-style: none;
     padding: 0;
 `
-
 export const BtnWrap = styled.div`
     text-align: center;
     margin-top: 50px;
 `
-
 export const TechItem = styled.div`
     font-size: 1rem;
     text-align: center;

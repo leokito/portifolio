@@ -34,8 +34,8 @@ const Footer = () => {
                 <SocialMediaWrap>
                     <SocialIcons>
                         <SocialLink href="https://www.linkedin.com/in/leonardo-m-pereira" target="_blank" aria-label="Linkedin"><FaLinkedin></FaLinkedin></SocialLink>
-                        <SocialLink href="https://wwww.github.com/leokito" target="_blank" aria-label="Github"><FaGithub></FaGithub></SocialLink>
-                        <SocialLink href="" target="_blank" aria-label="Instgram"><FaInstagram/></SocialLink>
+                        <SocialLink href="https://www.github.com/leokito" target="_blank" aria-label="Github"><FaGithub></FaGithub></SocialLink>
+                        {/* <SocialLink href="" target="_blank" aria-label="Instgram"><FaInstagram/></SocialLink> */}
                     </SocialIcons>
                 </SocialMediaWrap>
             </SocialMedia>

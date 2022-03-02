@@ -13,7 +13,7 @@ const Header = ({toggle}: any) => {
             spy={true}
             offset={-80}
         >
-            {"<Leo/Dev>"}
+            {"Portifolio"}
         </HeaderLogo>
         <MobileIcon onClick={toggle}>
           <FaBars />
@@ -51,7 +51,12 @@ const Header = ({toggle}: any) => {
             >Projetos</NavLinks>
         </NavMenu>
         <NavButton>
-            <NavBtnLink to="contact">Contato</NavBtnLink>
+            <NavBtnLink 
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+                to="contact">Contato</NavBtnLink>
         </NavButton>
       </HeaderContainer>
   </Nav>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import SliderComp from '../SliderComp'
 import { ArrowForward, ArrowRight } from '../HeroSection/style'
 import { QualiContainer, QualiTitle, QualiWrap, BtnWrap } from './style'
