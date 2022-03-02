@@ -1,7 +1,5 @@
 import { BrowserRouter as Router  } from 'react-router-dom';
-import './App.css';
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
+import Contact from './components/Contact';
 import Home from './pages/Home';
 
 function App() {

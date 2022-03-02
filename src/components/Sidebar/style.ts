@@ -1,9 +1,8 @@
-import styled from 'styled-components'
-import {FaTimes} from 'react-icons/fa'
-import { SideBarComp } from '../../Types'
-import { Link as RouteLink } from 'react-router-dom'
-import {Link as ScrollLink} from 'react-scroll'
-
+import styled from 'styled-components';
+import {FaTimes} from 'react-icons/fa';
+import { SideBarComp } from '../../Types';
+import { Link as RouteLink } from 'react-router-dom';
+import {Link as ScrollLink} from 'react-scroll';
 
 export const SidebarContainer = styled.aside<SideBarComp>`
     position: fixed;
@@ -21,9 +20,7 @@ export const SidebarContainer = styled.aside<SideBarComp>`
 `
 export const CloseIcon = styled(FaTimes)`
     color: #fff;
-
 `
-
 export const Icon = styled.div`
     position: absolute;
     top: 1.2rem;
@@ -40,18 +37,18 @@ export const SidebarMenu = styled.ul`
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 80px);
-    text=align: center;
+    text-align: center;
+    padding: 0;
 
     @media screen and (max-width: 480px) {
         grid-template-rows: repeat(6, 60px)
     }
 `
-
 export const SidebarLink = styled(ScrollLink)`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-decoration: none;
     list-style: none;
     transition: 0.2s ease-in-out;
@@ -64,12 +61,10 @@ export const SidebarLink = styled(ScrollLink)`
             transition: 0.2s ease-in-out;
         }
 `
-
 export const SideBtnWrp = styled.div`
     display: flex;
     justify-content: center;
 `
-
 export const SidebarBtn = styled(RouteLink)`
     border-radius: 50px;
     background: red;
@@ -88,5 +83,4 @@ export const SidebarBtn = styled(RouteLink)`
         background: #fff;
         color: #000;
     }
-
 `

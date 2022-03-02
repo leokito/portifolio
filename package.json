@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-spring/types": "^9.4.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.13",
     "@types/react": "^17.0.20",
+    "@types/react-animated-modal": "^1.1.1",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.3.3",
     "react": "^17.0.2",
@@ -17,6 +19,7 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.5",
+    "react-spring": "^9.0.0-rc.3",
     "styled-components": "^5.3.3",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
@@ -48,6 +51,7 @@
   "devDependencies": {
     "@types/react-icons": "^3.0.0",
     "@types/react-scroll": "^1.8.3",
-    "@types/styled-components": "^5.1.22"
+    "@types/styled-components": "^5.1.22",
+    "react-animated-modal": "^1.1.1"
   }
 }

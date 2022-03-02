@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Link as RouteLink } from 'react-router-dom'
 import {Link as ScrollLink} from 'react-scroll'
 
 export const Nav = styled.nav`
@@ -18,7 +17,6 @@ export const Nav = styled.nav`
         transition: 0.8s all ease;
     }
 `
-
 export const HeaderContainer = styled.div`
     display: flex;
     justify-content: space-between;
@@ -27,8 +25,9 @@ export const HeaderContainer = styled.div`
     width:100%;
     padding: 0 24px;
     /* max-width: 2000px; */
+    box-shadow: rgba(255,255,255, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 `
-export const HeaderLogo = styled(RouteLink)`
+export const HeaderLogo = styled(ScrollLink)`
     color: #fff;
     justify-self: flex-start;
     cursor: pointer;
@@ -39,7 +38,6 @@ export const HeaderLogo = styled(RouteLink)`
     font-weight: bold;
     text-decoration: none;
 `
-
 export const MobileIcon = styled.div`
     display: none;
 
@@ -54,7 +52,6 @@ export const MobileIcon = styled.div`
         color: #fff;
     }
 `
-
 export const NavMenu = styled.ul`
     display: flex;
     align-items: center;
@@ -66,11 +63,9 @@ export const NavMenu = styled.ul`
         display: none;
     }
 `
-
 export const NavMenuItem = styled.li`
     height: 80px;
 `
-
 export const NavLinks = styled(ScrollLink)`
     color: #fff;
     display: flex;
@@ -78,13 +73,11 @@ export const NavLinks = styled(ScrollLink)`
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
-    cursos: pointer;
-
+    cursor: pointer;
     &.active {
         border-bottom: 3px solid red;
     }
 `
-
 export const NavButton = styled.nav`
     display: flex;
     align-items: center;
@@ -93,13 +86,13 @@ export const NavButton = styled.nav`
         display: none;
     }
 `
-
-export const NavBtnLink = styled(RouteLink)`
+export const NavBtnLink = styled(ScrollLink)`
     border-radius: 50px;
-    background: red;
+    background: #b22222;
     white-space: nowrap;
     padding: 10px 22px;
-    color: black;
+    color: #fff;
+    font-weight: 600;
     font-size: 16px
     outline: none;
     border: none;
@@ -109,7 +102,7 @@ export const NavBtnLink = styled(RouteLink)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #fff;
+        background: #dcdcdc;
         color: #000;
     }
 
