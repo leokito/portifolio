@@ -10,7 +10,6 @@ import {
     MdKeyboardArrowDown, 
 } from "react-icons/md";
 
-
 export const Button = styled(Link)<ButtonElement>`
     border-radius: 50px;
     background: ${({primary}) => (primary ? '#b22222' : '#dcdcdc')};

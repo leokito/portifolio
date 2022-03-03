@@ -22,7 +22,7 @@ const Projects = () => {
 
   const turnModal = () => {
       setShowModal(!showModal)
-  }
+  };
   
   return (
     <ProjectContainer id="projects">
@@ -31,8 +31,8 @@ const Projects = () => {
             <ProjectCard img={project1.projectImg} onClick={()=> {
               setShowModal(true)
               setProject(project1)}}>
-                <ProjectName >Habitflow</ProjectName>
-                <ProjectDesc>Aplicação para gestão de hábitos, criação de grupos de atividades. Projeto construído em ReactJS</ProjectDesc>
+                <ProjectName >{project1.name}</ProjectName>
+                <ProjectDesc>{project1.desc}</ProjectDesc>
             </ProjectCard>
             {/* <ProjectCard img={project2.projectImg} onClick={()=> {
               setShowModal(true)
@@ -63,7 +63,7 @@ const Projects = () => {
           onMouseEnter={onHover}
           onMouseLeave={onHover}
           >
-          Contato {hover ? <ArrowKeyboardDown/> : <ArrowDown />}
+          Contato {hover ? <ArrowDown/> : <ArrowKeyboardDown/>}
           </Button>
         </BtnWrap>
         { showModal ? (
@@ -89,8 +89,8 @@ const Projects = () => {
             </ModalContent>
             </ModalContentWrap>
                 <ModalBtnWrap>
-                  <ModalBtn href={project.projectRepo}>Repositório</ModalBtn>
-                  <ModalBtn href={project.projectDeploy}>Visitar</ModalBtn>
+                  <ModalBtn href={project.projectRepo} target="_blank">Repositório</ModalBtn>
+                  <ModalBtn href={project.projectDeploy}target="_blank">Visitar</ModalBtn>
                 </ModalBtnWrap>
             </ModalWrap>
         </ModalBackground>
