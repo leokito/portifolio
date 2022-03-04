@@ -13,7 +13,7 @@ const Header = ({toggle}: any) => {
             spy={true}
             offset={-80}
         >
-            {"Portifolio"}
+            {"<Leo/Dev>"}
         </HeaderLogo>
         <MobileIcon onClick={toggle}>
           <FaBars />

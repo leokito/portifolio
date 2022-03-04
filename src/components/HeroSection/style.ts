@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
+import {motion} from 'framer-motion'
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 
 export const HeroContainer = styled.div`
@@ -41,7 +42,7 @@ export const HeroContent = styled.div`
     flex-direction: column;
     align-items: center;
 `
-export const HeroH1 = styled.h1`
+export const HeroH1 = styled(motion.h1)`
     color: #fff;
     font-size: 48px;
     text-align: center;
@@ -53,8 +54,8 @@ export const HeroH1 = styled.h1`
         font-size: 32px
     }
 `
-export const HeroP = styled.p`
-    margin-top: 24px;
+export const HeroP = styled.div`
+    margin-top: -20px;
     color: #fff;
     font-size: 24px;
     text-align: center;
@@ -80,4 +81,61 @@ export const ArrowForward = styled(MdArrowForward)`
 export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left: 8px;
     font-size: 20px;
+`
+export const ContentContainer = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 250px;
+    margin-bottom: 95px;
+`
+export const AnImage = styled(motion.img)`
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 90px;
+    max-height: 90px;
+`
+export const RightColumn = styled(motion.div)`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+
+    ${AnImage}: nth-child(1) {
+        top: 50px;
+        left: 120px;
+    }
+    ${AnImage}: nth-child(2) {
+        top: 150px;
+        left: 120px;
+    }
+    ${AnImage}: nth-child(3) {
+        top: 20px;
+        right:50px;
+    }
+    ${AnImage}: nth-child(4) {
+        top: 90px;
+        left: 190px;
+    }
+    ${AnImage}: nth-child(5) {
+        top: 200px;
+        right: 80px;
+    }
+    ${AnImage}: nth-child(6) {
+        top: 150px;
+        right: 5px;
+    }
+    ${AnImage}: nth-child(7) {
+        top: 210px;
+        right: -80px;
+    }
+`
+export const LeftColumn = styled.div`
+    text-align: center;
+    color: white;
+
+    h1 {
+        font-size: 3rem;
+    }
 `

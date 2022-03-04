@@ -78,7 +78,6 @@ export const ProjectCard = styled.div<iProjectCard>`
         display: block;
         color: #000;
     }
-
 `
 export const ProjectName = styled.h2`
     color: #000;
@@ -220,4 +219,9 @@ export const CloseModalButton = styled(MdClose)`
     height: 32px;
     padding: 0;
     z-index: 25;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        transform: rotateZ(360deg);
+    }
 `

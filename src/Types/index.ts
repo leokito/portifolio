@@ -52,3 +52,8 @@ export interface iProjectCard {
   onClick?: ()=> void;
   img: any;
 };
+
+export interface iTypewriter {
+  text: string;
+  value: string;
+}
