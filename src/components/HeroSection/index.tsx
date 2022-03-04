@@ -44,7 +44,7 @@ const HeroSection = () => {
           <HeroP>
           <Typewriter 
           options={{
-            strings: ['Desenvolvedor Front-end.', 'Desenvolvedor Back-end developer.', 'Desenvolvedor FullStack developer.'],
+            strings: ['Desenvolvedor Front-end.', 'Desenvolvedor Back-end.', 'Desenvolvedor FullStack.'],
             autoStart: true,
             loop: true,
             cursor: '|',
