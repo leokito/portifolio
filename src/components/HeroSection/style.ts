@@ -104,6 +104,7 @@ export const RightColumn = styled(motion.div)`
 
     @media (max-width: 768px) {
         display: hidden;
+        background-color: blue;
     }
 
     ${AnImage}: nth-child(1) {
