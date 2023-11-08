@@ -102,6 +102,10 @@ export const RightColumn = styled(motion.div)`
     padding: 2rem;
     position: relative;
 
+    @media (max-width: 768px) {
+        display: hidden;
+    }
+
     ${AnImage}: nth-child(1) {
         top: 50px;
         left: 120px;
